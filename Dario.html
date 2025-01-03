@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dario Gonning Simulator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #startButton {
+            font-size: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #darioText {
+            display: none;
+            font-size: 30px;
+            margin-top: 20px;
+        }
+        #emojiText {
+            display: none;
+            font-size: 50px;
+        }
+        #finalButton {
+            display: none;
+            font-size: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dario Gonning Simulator</h1>
+    <button id="startButton">Start</button>
+    <p id="darioText">Dario</p>
+    <p id="emojiText">💦</p>
+    <button id="finalButton">Start</button>
+
+    <script>
+        document.getElementById('startButton').addEventListener('click', function() {
+            // Hide start button and show Dario text
+            document.getElementById('startButton').style.display = 'none';
+            document.getElementById('darioText').style.display = 'block';
+        });
+
+        document.getElementById('darioText').addEventListener('click', function() {
+            // Make the text bigger and show emoji
+            document.getElementById('darioText').style.fontSize = '50px';
+            document.getElementById('emojiText').style.display = 'block';
+            document.getElementById('finalButton').style.display = 'block';
+        });
+
+        document.getElementById('finalButton').addEventListener('click', function() {
+            // Redirect to the specified URL
+            window.location.href = "https://www.pornhub.com/model/de-lora";
+        });
+    </script>
+</body>
+</html>
